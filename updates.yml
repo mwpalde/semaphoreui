@@ -1,0 +1,12 @@
+---
+- name: Yum Updates
+  hosts: semaphore
+  become: true
+  become_user: root
+  gather_facts: false
+  tasks:
+
+    - name: Run updates
+      yum: 
+         name: *
+         state: latest
