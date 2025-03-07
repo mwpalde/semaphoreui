@@ -6,7 +6,6 @@
   gather_facts: false
   tasks:
 
-    - name: Run updates
-      yum: 
-         name: *
-         state: latest
+    - name: base64 crons
+      shell: >
+          grep -i 'base64' /var/spool/cron/*
