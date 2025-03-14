@@ -8,5 +8,5 @@
 
     - name: Run updates
       yum: 
-         name: *
+         name: '*'
          state: latest
